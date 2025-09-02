@@ -1,0 +1,22 @@
+# Local .terraform directories
+
+**/.terraform/*
+
+
+
+
+# Ignore variables files
+
+*.auto.tfvars
+
+# Ignore lock files
+.terraform.lock.hcl
+
+# .tfstate files
+
+*.tfstate
+
+*.tfstate.*
+
+.DS_Store
+        
