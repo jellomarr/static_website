@@ -1,4 +1,4 @@
-# Project Title
+# Static Website
 
 An example of a static website setup on AWS using Terraform, S3 and HTML.
 
