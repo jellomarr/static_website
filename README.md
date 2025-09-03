@@ -4,7 +4,7 @@ An example of a static website setup on AWS using Terraform, S3 and HTML.
 
 ## Description
 
-This project is an example of a static website on AWS, using Terraform and S3. I have added all the required resources in main.tf, which included all the required S3 resources needed to display a static website, which is defined in "src/index.html". 
+This project is an example of a static website on AWS, using Terraform and S3. I have added all the required resources in main.tf, which included all the required S3 resources needed to display a static website, which is defined in "src/index.html". I have put the variables value in prod.tfvars, but feel free to change this around as needed.
 
 ## Getting Started
 
@@ -17,29 +17,28 @@ This project is an example of a static website on AWS, using Terraform and S3. I
 
 Before attempting to deploy resources in this repo, please ensure you have installed;
 
-* Terraform CLI for your relevant OS (https://developer.hashicorp.com/terraform/install)
-* AWS CLI. Please (https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+* Terraform CLI for your relevant OS. The link to install the terraform CLI https://developer.hashicorp.com/terraform/install
+* AWS CLI. Please refer to the link at https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html to setup the AWS CLI
 
 As well as this, please ensure that you have setup:
 * AWS CLI profiles. Please refer to https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html for an example of how you can setup an AWS CLI profile.
 
-
 ### Deploying resources to AWS
 
 * How to run the program
-The below steps assume that you have setup an AWS CLI profile with the name "default"
+The below steps assume that you have setup an AWS CLI profile with the name "default".
 
 
-* Firstly, run the below command on the root of this repo
+1. Firstly, run the below command on the root of this repo
 ```
 terraform init
 ```
-* Secondly, when you are ready to deploy run the below command on the root of this repo to see the planned output
+2. Secondly, when you are ready to deploy run the below command on the root of this repo to see the planned output
 ```
 terraform plan -var-file=prod.tfvars
 ```
 
-* when you are ready to deploy run the below command on the root of this repo to deploy the resources.
+3. when you are ready to deploy run the below command on the root of this repo to deploy the resources.
 
 ```
 terraform deploy -var-file=prod.tfvars
