@@ -18,7 +18,7 @@ This project is an example of a static website on AWS, using Terraform and S3. I
 Before attempting to deploy resources in this repo, please ensure you have installed;
 
 * Terraform CLI for your relevant OS. The link to install the terraform CLI https://developer.hashicorp.com/terraform/install
-* AWS CLI. Please refer to the link at https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html to setup the AWS CLI
+* AWS CLI. Please refer to the link at https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html to setup the AWS CLI on your machine.
 
 As well as this, please ensure that you have setup:
 * AWS CLI profiles. Please refer to https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html for an example of how you can setup an AWS CLI profile.
@@ -38,7 +38,7 @@ terraform init
 terraform plan -var-file=prod.tfvars
 ```
 
-3. when you are ready to deploy run the below command on the root of this repo to deploy the resources.
+3. When you are ready to deploy run the below command on the root of this repo to deploy the resources.
 
 ```
 terraform deploy -var-file=prod.tfvars
