@@ -17,7 +17,7 @@ This project is an example of a static website on AWS, using Terraform and S3. I
 
 Before attempting to deploy resources in this repo, please ensure you have installed;
 
-* Terraform CLI for your relevant OS. The link to install the terraform CLI https://developer.hashicorp.com/terraform/install
+* Terraform CLI for your relevant OS. The link to install the Terraform CLI is at https://developer.hashicorp.com/terraform/install.
 * AWS CLI. Please refer to the link at https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html to setup the AWS CLI on your machine.
 
 As well as this, please ensure that you have setup:
